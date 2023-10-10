@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html , body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background-color: rgb(7, 16, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container{
+    height:400px;
+    width:350px;
+    border-radius:10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#container img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+
+}
+
+#container i{
+    color: red;
+    font-size: 70px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(2); /* to center the elemenet exactly*/
+    opacity: 0;
+    transition: transform ease 0.4s;
+    
+}
